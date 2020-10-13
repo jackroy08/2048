@@ -18,6 +18,29 @@ let value14="0"
 let value15="4"
 let value16="8"
 
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        up()
+    }
+    else if (e.keyCode == '40') {
+        down()
+    }
+    else if (e.keyCode == '37') {
+       left()
+    }
+    else if (e.keyCode == '39') {
+       right()
+    }
+
+}
+
+
 display()
 
 function start(){

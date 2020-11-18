@@ -26,20 +26,53 @@ function checkKey(e) {
     e = e || window.event;
 
     if (e.keyCode == '38') {
-        up()
+        checkup()
     }
     else if (e.keyCode == '40') {
-        down()
+        checkdown()
     }
     else if (e.keyCode == '37') {
-       left()
+       checkleft()
     }
     else if (e.keyCode == '39') {
-       right()
+       checkright()
     }
 
 }
 
+function checkup(){
+    if (value1==="W"){
+    start()
+    }
+    else{
+        up()
+    }
+}
+
+function checkdown(){
+    if (value1==="W"){
+    start()
+    }
+    else{
+        down()
+    }
+}
+function checkright(){
+    if (value1==="W"){
+    start()
+    }
+    else{
+        right()
+    }
+}
+function checkleft(){
+    if (value1==="W"){
+    start()
+    }
+    else{
+        left()
+    }
+}
 
 display()
 
